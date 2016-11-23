@@ -1,0 +1,58 @@
+$scaffold-in-col(size) {
+
+  &:not(.guide) {
+
+    &,
+    &.family {
+
+      padding: size size 0 size;
+      > * { margin-bottom: size; }
+    }
+
+    &.only-children {
+
+      padding: 0;
+      > * { margin-bottom: size; }
+    }
+  }
+
+  &.guide {
+
+    &,
+    &.family {
+
+      @extend .guide-padding;
+      border-top-width: size;
+      border-right-width: size;
+      border-bottom-width: 0;
+      border-left-width: size;
+
+      > * {
+        @extend .guide-margin;
+        @extend .guide-content;
+        border-top-width: 0;
+        border-right-width: 0;
+        border-bottom-width: size;
+        border-left-width: 0;
+      }
+    }
+
+    &.only-children {
+
+      @extend .guide-padding;
+      border-top-width: 0;
+      border-right-width: 0;
+      border-bottom-width: 0;
+      border-left-width: 0;
+
+      > * {
+        @extend .guide-margin;
+        @extend .guide-content;
+        border-top-width: 0;
+        border-right-width: 0;
+        border-bottom-width: size;
+        border-left-width: 0;
+      }
+    }
+  }
+}

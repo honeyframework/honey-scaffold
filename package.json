@@ -1,0 +1,22 @@
+{
+  "name": "honey-scaffold",
+  "version": "0.0.0",
+  "description": "Bare-bones implementation of Honey's scaffolding structure",
+  "main": "index.js",
+  "scripts": {
+    "build": "stylus src --out build/honey-scaffold.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honeyframework/honey-scaffold.git"
+  },
+  "author": "Johnny Copperstone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/honeyframework/honey-scaffold/issues"
+  },
+  "homepage": "https://github.com/honeyframework/honey-scaffold#readme",
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}

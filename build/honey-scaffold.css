@@ -1,0 +1,146 @@
+.guide-margin,
+.sc-row.sc-spacing-default.guide > *,
+.sc-row.sc-spacing-default.guide.wrap > *,
+.sc-col.sc-spacing-default.guide > *,
+.sc-col.sc-spacing-default.guide.family > *,
+.sc-col.sc-spacing-default.guide.only-children > * {
+  border-style: solid;
+  border-color: #f7cb9f;
+}
+.guide-padding,
+.sc-row.sc-spacing-default.guide,
+.sc-row.sc-spacing-default.guide.wrap,
+.sc-col.sc-spacing-default.guide,
+.sc-col.sc-spacing-default.guide.family,
+.sc-col.sc-spacing-default.guide.only-children {
+  border-style: solid;
+  border-color: #c1cc8c;
+}
+.guide-content,
+.sc-row.sc-spacing-default.guide > *,
+.sc-row.sc-spacing-default.guide.wrap > *,
+.sc-col.sc-spacing-default.guide > *,
+.sc-col.sc-spacing-default.guide.family > *,
+.sc-col.sc-spacing-default.guide.only-children > * {
+  background-color: #8bb3be;
+}
+.scaffold,
+.sc-row,
+.sc-col {
+  display: flex;
+}
+.sc-row {
+  flex-direction: row;
+}
+.sc-row.sc-spacing-default:not(.guide),
+.sc-row.sc-spacing-default:not(.guide).family {
+  padding: 10px 0 10px 10px;
+}
+.sc-row.sc-spacing-default:not(.guide) > *,
+.sc-row.sc-spacing-default:not(.guide).family > * {
+  margin-right: 10px;
+}
+.sc-row.sc-spacing-default:not(.guide).wrap,
+.sc-row.sc-spacing-default:not(.guide).family.wrap {
+  padding: 10px 0 0 10px;
+}
+.sc-row.sc-spacing-default:not(.guide).wrap > *,
+.sc-row.sc-spacing-default:not(.guide).family.wrap > * {
+  margin-bottom: 10px;
+}
+.sc-row.sc-spacing-default:not(.guide).only-children {
+  padding: 0;
+}
+.sc-row.sc-spacing-default:not(.guide).only-children > * {
+  margin-right: 10px;
+}
+.sc-row.sc-spacing-default:not(.guide).only-children.wrap > * {
+  margin-bottom: 10px;
+}
+.sc-row.sc-spacing-default.guide {
+  border-top-width: 10px;
+  border-right-width: 0;
+  border-bottom-width: 10px;
+  border-left-width: 10px;
+}
+.sc-row.sc-spacing-default.guide > * {
+  border-top-width: 0;
+  border-right-width: 10px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.sc-row.sc-spacing-default.guide.wrap {
+  border-top-width: 10px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 10px;
+}
+.sc-row.sc-spacing-default.guide.wrap > * {
+  border-top-width: 0;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 0;
+}
+.sc-row.sc-spacing-default.guide.only-children {
+  border: 0;
+}
+.sc-col {
+  flex-direction: column;
+}
+.sc-col.sc-spacing-default:not(.guide),
+.sc-col.sc-spacing-default:not(.guide).family {
+  padding: 10px 10px 0 10px;
+}
+.sc-col.sc-spacing-default:not(.guide) > *,
+.sc-col.sc-spacing-default:not(.guide).family > * {
+  margin-bottom: 10px;
+}
+.sc-col.sc-spacing-default:not(.guide).only-children {
+  padding: 0;
+}
+.sc-col.sc-spacing-default:not(.guide).only-children > * {
+  margin-bottom: 10px;
+}
+.sc-col.sc-spacing-default.guide,
+.sc-col.sc-spacing-default.guide.family {
+  border-top-width: 10px;
+  border-right-width: 10px;
+  border-bottom-width: 0;
+  border-left-width: 10px;
+}
+.sc-col.sc-spacing-default.guide > *,
+.sc-col.sc-spacing-default.guide.family > * {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 10px;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-default.guide.only-children {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-default.guide.only-children > * {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 10px;
+  border-left-width: 0;
+}
+.sc-row > *,
+.sc-col > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.sc-row.wrap,
+.sc-col.wrap {
+  flex-wrap: wrap;
+}
+.sc-row.fill,
+.sc-col.fill {
+  flex-grow: 1;
+}
+.sc-row.shrink,
+.sc-col.shrink {
+  flex-shrink: 1;
+}

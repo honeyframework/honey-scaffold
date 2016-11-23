@@ -1,0 +1,46 @@
+@import './utils/_guide.styl';
+
+@import './mixins/_scaffold-in-row.styl';
+@import './mixins/_scaffold-in-col.styl';
+
+.scaffold {
+  display: flex;
+}
+
+.sc-row {
+  flex-direction: row;
+
+  &.sc-spacing-default {
+    $scaffold-in-row(10px);
+  }
+}
+
+.sc-col {
+  flex-direction: column;
+
+  &.sc-spacing-default {
+    $scaffold-in-col(10px);
+  }
+}
+
+.sc-row,
+.sc-col {
+  @extend .scaffold;
+
+  > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.fill {
+    flex-grow: 1;
+  }
+
+  &.shrink {
+    flex-shrink: 1;
+  }
+}

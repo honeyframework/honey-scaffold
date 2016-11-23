@@ -1,0 +1,76 @@
+$scaffold-in-row(size) {
+
+  // Default or `family` orientation
+  // (both parent and children) enforces
+  // spacing on both parent and the child
+  // elements.
+
+  &:not(.guide) {
+
+    &,
+    &.family {
+
+      padding: size 0 size size;
+      > * { margin-right: size; }
+
+      &.wrap {
+        padding: size 0 0 size;
+        > * { margin-bottom: size; }
+      }
+    }
+
+    // `only-children` orientation
+    // enforces spacing on - you guessed it -
+    // only the child elements.
+
+    &.only-children {
+
+      padding: 0;
+      > * { margin-right: size; }
+
+      &.wrap {
+        > * { margin-bottom: size; }
+      }
+    }
+  }
+
+  &.guide {
+
+    @extend .guide-padding;
+    border-top-width: size;
+    border-right-width: 0;
+    border-bottom-width: size;
+    border-left-width: size;
+
+    > * {
+      @extend .guide-margin;
+      @extend .guide-content;
+      border-top-width: 0;
+      border-right-width: size;
+      border-bottom-width: 0;
+      border-left-width: 0;
+    }
+
+    &.wrap {
+
+      @extend .guide-padding;
+      border-top-width: size;
+      border-right-width: 0;
+      border-bottom-width: 0;
+      border-left-width: size;
+
+      > * {
+        @extend .guide-margin;
+        @extend .guide-content;
+        border-top-width: 0;
+        border-right-width: size;
+        border-bottom-width: size;
+        border-left-width: 0;
+      }
+    }
+
+    &.only-children {
+      border: 0;
+    }
+  }
+}
