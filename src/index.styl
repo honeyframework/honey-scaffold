@@ -10,17 +10,17 @@
 .sc-row {
   flex-direction: row;
 
-  &.sc-spacing-default {
-    $scaffold-in-row(10px);
-  }
+  &.sc-spacing-small { $scaffold-in-row(10px); }
+  &.sc-spacing-default { $scaffold-in-row(15px); }
+  &.sc-spacing-large { $scaffold-in-row(30px); }
 }
 
 .sc-col {
   flex-direction: column;
 
-  &.sc-spacing-default {
-    $scaffold-in-col(10px);
-  }
+  &.sc-spacing-small { $scaffold-in-col(10px); }
+  &.sc-spacing-default { $scaffold-in-col(15px); }
+  &.sc-spacing-large { $scaffold-in-col(30px); }
 }
 
 .sc-row,
