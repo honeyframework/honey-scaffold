@@ -1,27 +1,57 @@
 .guide-margin,
+.sc-row.sc-spacing-small.guide > *,
+.sc-row.sc-spacing-small.guide.wrap > *,
 .sc-row.sc-spacing-default.guide > *,
 .sc-row.sc-spacing-default.guide.wrap > *,
+.sc-row.sc-spacing-large.guide > *,
+.sc-row.sc-spacing-large.guide.wrap > *,
+.sc-col.sc-spacing-small.guide > *,
+.sc-col.sc-spacing-small.guide.family > *,
+.sc-col.sc-spacing-small.guide.only-children > *,
 .sc-col.sc-spacing-default.guide > *,
 .sc-col.sc-spacing-default.guide.family > *,
-.sc-col.sc-spacing-default.guide.only-children > * {
+.sc-col.sc-spacing-default.guide.only-children > *,
+.sc-col.sc-spacing-large.guide > *,
+.sc-col.sc-spacing-large.guide.family > *,
+.sc-col.sc-spacing-large.guide.only-children > * {
   border-style: solid;
   border-color: #f7cb9f;
 }
 .guide-padding,
+.sc-row.sc-spacing-small.guide,
+.sc-row.sc-spacing-small.guide.wrap,
 .sc-row.sc-spacing-default.guide,
 .sc-row.sc-spacing-default.guide.wrap,
+.sc-row.sc-spacing-large.guide,
+.sc-row.sc-spacing-large.guide.wrap,
+.sc-col.sc-spacing-small.guide,
+.sc-col.sc-spacing-small.guide.family,
+.sc-col.sc-spacing-small.guide.only-children,
 .sc-col.sc-spacing-default.guide,
 .sc-col.sc-spacing-default.guide.family,
-.sc-col.sc-spacing-default.guide.only-children {
+.sc-col.sc-spacing-default.guide.only-children,
+.sc-col.sc-spacing-large.guide,
+.sc-col.sc-spacing-large.guide.family,
+.sc-col.sc-spacing-large.guide.only-children {
   border-style: solid;
   border-color: #c1cc8c;
 }
 .guide-content,
+.sc-row.sc-spacing-small.guide > *,
+.sc-row.sc-spacing-small.guide.wrap > *,
 .sc-row.sc-spacing-default.guide > *,
 .sc-row.sc-spacing-default.guide.wrap > *,
+.sc-row.sc-spacing-large.guide > *,
+.sc-row.sc-spacing-large.guide.wrap > *,
+.sc-col.sc-spacing-small.guide > *,
+.sc-col.sc-spacing-small.guide.family > *,
+.sc-col.sc-spacing-small.guide.only-children > *,
 .sc-col.sc-spacing-default.guide > *,
 .sc-col.sc-spacing-default.guide.family > *,
-.sc-col.sc-spacing-default.guide.only-children > * {
+.sc-col.sc-spacing-default.guide.only-children > *,
+.sc-col.sc-spacing-large.guide > *,
+.sc-col.sc-spacing-large.guide.family > *,
+.sc-col.sc-spacing-large.guide.only-children > * {
   background-color: #8bb3be;
 }
 .scaffold,
@@ -32,87 +62,231 @@
 .sc-row {
   flex-direction: row;
 }
+.sc-row.sc-spacing-small:not(.guide),
+.sc-row.sc-spacing-small:not(.guide).family {
+  padding: 10px 0 10px 10px;
+}
+.sc-row.sc-spacing-small:not(.guide) > *,
+.sc-row.sc-spacing-small:not(.guide).family > * {
+  margin-right: 10px;
+}
+.sc-row.sc-spacing-small:not(.guide).wrap,
+.sc-row.sc-spacing-small:not(.guide).family.wrap {
+  padding: 10px 0 0 10px;
+}
+.sc-row.sc-spacing-small:not(.guide).wrap > *,
+.sc-row.sc-spacing-small:not(.guide).family.wrap > * {
+  margin-bottom: 10px;
+}
+.sc-row.sc-spacing-small:not(.guide).only-children {
+  padding: 0;
+}
+.sc-row.sc-spacing-small:not(.guide).only-children > * {
+  margin-right: 10px;
+}
+.sc-row.sc-spacing-small:not(.guide).only-children.wrap > * {
+  margin-bottom: 10px;
+}
+.sc-row.sc-spacing-small.guide {
+  border-top-width: 10px;
+  border-right-width: 0;
+  border-bottom-width: 10px;
+  border-left-width: 10px;
+}
+.sc-row.sc-spacing-small.guide > * {
+  border-top-width: 0;
+  border-right-width: 10px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.sc-row.sc-spacing-small.guide.wrap {
+  border-top-width: 10px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 10px;
+}
+.sc-row.sc-spacing-small.guide.wrap > * {
+  border-top-width: 0;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 0;
+}
+.sc-row.sc-spacing-small.guide.only-children {
+  border: 0;
+}
 .sc-row.sc-spacing-default:not(.guide),
 .sc-row.sc-spacing-default:not(.guide).family {
-  padding: 10px 0 10px 10px;
+  padding: 15px 0 15px 15px;
 }
 .sc-row.sc-spacing-default:not(.guide) > *,
 .sc-row.sc-spacing-default:not(.guide).family > * {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .sc-row.sc-spacing-default:not(.guide).wrap,
 .sc-row.sc-spacing-default:not(.guide).family.wrap {
-  padding: 10px 0 0 10px;
+  padding: 15px 0 0 15px;
 }
 .sc-row.sc-spacing-default:not(.guide).wrap > *,
 .sc-row.sc-spacing-default:not(.guide).family.wrap > * {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .sc-row.sc-spacing-default:not(.guide).only-children {
   padding: 0;
 }
 .sc-row.sc-spacing-default:not(.guide).only-children > * {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .sc-row.sc-spacing-default:not(.guide).only-children.wrap > * {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .sc-row.sc-spacing-default.guide {
-  border-top-width: 10px;
+  border-top-width: 15px;
   border-right-width: 0;
-  border-bottom-width: 10px;
-  border-left-width: 10px;
+  border-bottom-width: 15px;
+  border-left-width: 15px;
 }
 .sc-row.sc-spacing-default.guide > * {
   border-top-width: 0;
-  border-right-width: 10px;
+  border-right-width: 15px;
   border-bottom-width: 0;
   border-left-width: 0;
 }
 .sc-row.sc-spacing-default.guide.wrap {
-  border-top-width: 10px;
+  border-top-width: 15px;
   border-right-width: 0;
   border-bottom-width: 0;
-  border-left-width: 10px;
+  border-left-width: 15px;
 }
 .sc-row.sc-spacing-default.guide.wrap > * {
   border-top-width: 0;
-  border-right-width: 10px;
-  border-bottom-width: 10px;
+  border-right-width: 15px;
+  border-bottom-width: 15px;
   border-left-width: 0;
 }
 .sc-row.sc-spacing-default.guide.only-children {
   border: 0;
 }
+.sc-row.sc-spacing-large:not(.guide),
+.sc-row.sc-spacing-large:not(.guide).family {
+  padding: 30px 0 30px 30px;
+}
+.sc-row.sc-spacing-large:not(.guide) > *,
+.sc-row.sc-spacing-large:not(.guide).family > * {
+  margin-right: 30px;
+}
+.sc-row.sc-spacing-large:not(.guide).wrap,
+.sc-row.sc-spacing-large:not(.guide).family.wrap {
+  padding: 30px 0 0 30px;
+}
+.sc-row.sc-spacing-large:not(.guide).wrap > *,
+.sc-row.sc-spacing-large:not(.guide).family.wrap > * {
+  margin-bottom: 30px;
+}
+.sc-row.sc-spacing-large:not(.guide).only-children {
+  padding: 0;
+}
+.sc-row.sc-spacing-large:not(.guide).only-children > * {
+  margin-right: 30px;
+}
+.sc-row.sc-spacing-large:not(.guide).only-children.wrap > * {
+  margin-bottom: 30px;
+}
+.sc-row.sc-spacing-large.guide {
+  border-top-width: 30px;
+  border-right-width: 0;
+  border-bottom-width: 30px;
+  border-left-width: 30px;
+}
+.sc-row.sc-spacing-large.guide > * {
+  border-top-width: 0;
+  border-right-width: 30px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.sc-row.sc-spacing-large.guide.wrap {
+  border-top-width: 30px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 30px;
+}
+.sc-row.sc-spacing-large.guide.wrap > * {
+  border-top-width: 0;
+  border-right-width: 30px;
+  border-bottom-width: 30px;
+  border-left-width: 0;
+}
+.sc-row.sc-spacing-large.guide.only-children {
+  border: 0;
+}
 .sc-col {
   flex-direction: column;
 }
-.sc-col.sc-spacing-default:not(.guide),
-.sc-col.sc-spacing-default:not(.guide).family {
+.sc-col.sc-spacing-small:not(.guide),
+.sc-col.sc-spacing-small:not(.guide).family {
   padding: 10px 10px 0 10px;
 }
-.sc-col.sc-spacing-default:not(.guide) > *,
-.sc-col.sc-spacing-default:not(.guide).family > * {
+.sc-col.sc-spacing-small:not(.guide) > *,
+.sc-col.sc-spacing-small:not(.guide).family > * {
   margin-bottom: 10px;
 }
-.sc-col.sc-spacing-default:not(.guide).only-children {
+.sc-col.sc-spacing-small:not(.guide).only-children {
   padding: 0;
 }
-.sc-col.sc-spacing-default:not(.guide).only-children > * {
+.sc-col.sc-spacing-small:not(.guide).only-children > * {
   margin-bottom: 10px;
 }
-.sc-col.sc-spacing-default.guide,
-.sc-col.sc-spacing-default.guide.family {
+.sc-col.sc-spacing-small.guide,
+.sc-col.sc-spacing-small.guide.family {
   border-top-width: 10px;
   border-right-width: 10px;
   border-bottom-width: 0;
   border-left-width: 10px;
 }
+.sc-col.sc-spacing-small.guide > *,
+.sc-col.sc-spacing-small.guide.family > * {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 10px;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-small.guide.only-children {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-small.guide.only-children > * {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 10px;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-default:not(.guide),
+.sc-col.sc-spacing-default:not(.guide).family {
+  padding: 15px 15px 0 15px;
+}
+.sc-col.sc-spacing-default:not(.guide) > *,
+.sc-col.sc-spacing-default:not(.guide).family > * {
+  margin-bottom: 15px;
+}
+.sc-col.sc-spacing-default:not(.guide).only-children {
+  padding: 0;
+}
+.sc-col.sc-spacing-default:not(.guide).only-children > * {
+  margin-bottom: 15px;
+}
+.sc-col.sc-spacing-default.guide,
+.sc-col.sc-spacing-default.guide.family {
+  border-top-width: 15px;
+  border-right-width: 15px;
+  border-bottom-width: 0;
+  border-left-width: 15px;
+}
 .sc-col.sc-spacing-default.guide > *,
 .sc-col.sc-spacing-default.guide.family > * {
   border-top-width: 0;
   border-right-width: 0;
-  border-bottom-width: 10px;
+  border-bottom-width: 15px;
   border-left-width: 0;
 }
 .sc-col.sc-spacing-default.guide.only-children {
@@ -124,7 +298,47 @@
 .sc-col.sc-spacing-default.guide.only-children > * {
   border-top-width: 0;
   border-right-width: 0;
-  border-bottom-width: 10px;
+  border-bottom-width: 15px;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-large:not(.guide),
+.sc-col.sc-spacing-large:not(.guide).family {
+  padding: 30px 30px 0 30px;
+}
+.sc-col.sc-spacing-large:not(.guide) > *,
+.sc-col.sc-spacing-large:not(.guide).family > * {
+  margin-bottom: 30px;
+}
+.sc-col.sc-spacing-large:not(.guide).only-children {
+  padding: 0;
+}
+.sc-col.sc-spacing-large:not(.guide).only-children > * {
+  margin-bottom: 30px;
+}
+.sc-col.sc-spacing-large.guide,
+.sc-col.sc-spacing-large.guide.family {
+  border-top-width: 30px;
+  border-right-width: 30px;
+  border-bottom-width: 0;
+  border-left-width: 30px;
+}
+.sc-col.sc-spacing-large.guide > *,
+.sc-col.sc-spacing-large.guide.family > * {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 30px;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-large.guide.only-children {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-large.guide.only-children > * {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 30px;
   border-left-width: 0;
 }
 .sc-row > *,
