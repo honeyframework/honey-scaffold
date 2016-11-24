@@ -350,8 +350,8 @@
 .sc-col.wrap {
   flex-wrap: wrap;
 }
-.sc-row.fill,
-.sc-col.fill {
+.sc-row.grow,
+.sc-col.grow {
   flex-grow: 1;
 }
 .sc-row.shrink,
