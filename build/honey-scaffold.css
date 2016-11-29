@@ -54,6 +54,16 @@
 .sc-col.sc-spacing-large.guide.only-children > * {
   background-color: #8bb3be;
 }
+.ghost {
+  width: 100%;
+  height: 100%;
+}
+.ghost-fat {
+  width: 100%;
+}
+.ghost-tall {
+  height: 100%;
+}
 .scaffold,
 .sc-row,
 .sc-col {
@@ -61,6 +71,9 @@
 }
 .sc-row {
   flex-direction: row;
+}
+.sc-row > * {
+  flex-shrink: 1;
 }
 .sc-row.sc-spacing-small:not(.guide),
 .sc-row.sc-spacing-small:not(.guide).family {
@@ -83,6 +96,9 @@
 }
 .sc-row.sc-spacing-small:not(.guide).only-children > * {
   margin-right: 10px;
+}
+.sc-row.sc-spacing-small:not(.guide).only-children > *:last-child {
+  margin-right: 0;
 }
 .sc-row.sc-spacing-small:not(.guide).only-children.wrap > * {
   margin-bottom: 10px;
@@ -136,6 +152,9 @@
 .sc-row.sc-spacing-default:not(.guide).only-children > * {
   margin-right: 15px;
 }
+.sc-row.sc-spacing-default:not(.guide).only-children > *:last-child {
+  margin-right: 0;
+}
 .sc-row.sc-spacing-default:not(.guide).only-children.wrap > * {
   margin-bottom: 15px;
 }
@@ -188,6 +207,9 @@
 .sc-row.sc-spacing-large:not(.guide).only-children > * {
   margin-right: 30px;
 }
+.sc-row.sc-spacing-large:not(.guide).only-children > *:last-child {
+  margin-right: 0;
+}
 .sc-row.sc-spacing-large:not(.guide).only-children.wrap > * {
   margin-bottom: 30px;
 }
@@ -220,6 +242,9 @@
 }
 .sc-col {
   flex-direction: column;
+}
+.sc-col > * {
+  flex-shrink: 0;
 }
 .sc-col.sc-spacing-small:not(.guide),
 .sc-col.sc-spacing-small:not(.guide).family {
@@ -344,7 +369,6 @@
 .sc-row > *,
 .sc-col > * {
   flex-grow: 0;
-  flex-shrink: 0;
 }
 .sc-row.wrap,
 .sc-col.wrap {
@@ -354,7 +378,41 @@
 .sc-col.grow {
   flex-grow: 1;
 }
+.sc-row.no-grow,
+.sc-col.no-grow {
+  flex-grow: 0;
+}
 .sc-row.shrink,
 .sc-col.shrink {
   flex-shrink: 1;
+}
+.sc-row.no-shrink,
+.sc-col.no-shrink {
+  flex-shrink: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: $cha;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  padding: 50px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(36,35,43,0.1);
+}
+::-webkit-scrollbar-track:window-inactive,
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #f00;
+  -webkit-box-shadow: none;
 }

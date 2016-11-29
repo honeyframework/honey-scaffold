@@ -1,4 +1,5 @@
 @import './utils/_guide.styl';
+@import './helpers/_ghosts.styl';
 
 @import './mixins/_scaffold-in-row.styl';
 @import './mixins/_scaffold-in-col.styl';
@@ -9,6 +10,10 @@
 
 .sc-row {
   flex-direction: row;
+
+  > * {
+    flex-shrink: 1;
+  }
 
   &.sc-spacing-small {
     $scaffold-in-row(10px);
@@ -25,6 +30,10 @@
 
 .sc-col {
   flex-direction: column;
+
+  > * {
+    flex-shrink: 0;
+  }
 
   &.sc-spacing-small {
     $scaffold-in-col(10px);
@@ -45,7 +54,6 @@
 
   > * {
     flex-grow: 0;
-    flex-shrink: 0;
   }
 
   &.wrap {
@@ -56,7 +64,17 @@
     flex-grow: 1;
   }
 
+  &.no-grow {
+    flex-grow: 0;
+  }
+
   &.shrink {
     flex-shrink: 1;
   }
+
+  &.no-shrink {
+    flex-shrink: 0;
+  }
 }
+
+@import './modules/scrollbar/scrollbar.styl';

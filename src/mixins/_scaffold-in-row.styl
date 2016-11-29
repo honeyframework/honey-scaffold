@@ -32,6 +32,9 @@ $scaffold-in-row(size) {
       padding: 0;
       > * {
         margin-right: size;
+        &:last-child {
+          margin-right: 0;
+        }
       }
 
       &.wrap {

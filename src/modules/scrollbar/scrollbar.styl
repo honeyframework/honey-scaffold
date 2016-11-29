@@ -1,0 +1,45 @@
+$scrollbar-size = 8px;
+$scrollbar-radius = 10px;
+$scrollbar-background = $cha;
+$scrollbar-thumb-background = rgba(#24232b, 0.1);
+
+/*
+Custom scrollbar style, currently
+only for webkit browsers. */
+
+::-webkit-scrollbar {
+ display: none;
+}
+
+::-webkit-scrollbar {
+
+	width: $scrollbar-size;
+	height: $scrollbar-size;
+	background-color: $scrollbar-background;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-corner {
+	display: none;
+}
+
+::-webkit-scrollbar-thumb {
+
+	padding: 50px;
+	-webkit-border-radius: $scrollbar-radius;
+	border-radius: $scrollbar-radius;
+	background: $scrollbar-thumb-background;
+}
+
+::-webkit-scrollbar-track:window-inactive,
+::-webkit-scrollbar-thumb:window-inactive {
+
+	background: red;
+	-webkit-box-shadow: none;
+}
