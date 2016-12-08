@@ -3,6 +3,8 @@
 .sc-row.sc-spacing-small.guide.wrap > *,
 .sc-row.sc-spacing-default.guide > *,
 .sc-row.sc-spacing-default.guide.wrap > *,
+.sc-row.sc-spacing-medium.guide > *,
+.sc-row.sc-spacing-medium.guide.wrap > *,
 .sc-row.sc-spacing-large.guide > *,
 .sc-row.sc-spacing-large.guide.wrap > *,
 .sc-col.sc-spacing-small.guide > *,
@@ -11,6 +13,9 @@
 .sc-col.sc-spacing-default.guide > *,
 .sc-col.sc-spacing-default.guide.family > *,
 .sc-col.sc-spacing-default.guide.only-children > *,
+.sc-col.sc-spacing-medium.guide > *,
+.sc-col.sc-spacing-medium.guide.family > *,
+.sc-col.sc-spacing-medium.guide.only-children > *,
 .sc-col.sc-spacing-large.guide > *,
 .sc-col.sc-spacing-large.guide.family > *,
 .sc-col.sc-spacing-large.guide.only-children > * {
@@ -22,6 +27,8 @@
 .sc-row.sc-spacing-small.guide.wrap,
 .sc-row.sc-spacing-default.guide,
 .sc-row.sc-spacing-default.guide.wrap,
+.sc-row.sc-spacing-medium.guide,
+.sc-row.sc-spacing-medium.guide.wrap,
 .sc-row.sc-spacing-large.guide,
 .sc-row.sc-spacing-large.guide.wrap,
 .sc-col.sc-spacing-small.guide,
@@ -30,6 +37,9 @@
 .sc-col.sc-spacing-default.guide,
 .sc-col.sc-spacing-default.guide.family,
 .sc-col.sc-spacing-default.guide.only-children,
+.sc-col.sc-spacing-medium.guide,
+.sc-col.sc-spacing-medium.guide.family,
+.sc-col.sc-spacing-medium.guide.only-children,
 .sc-col.sc-spacing-large.guide,
 .sc-col.sc-spacing-large.guide.family,
 .sc-col.sc-spacing-large.guide.only-children {
@@ -41,6 +51,8 @@
 .sc-row.sc-spacing-small.guide.wrap > *,
 .sc-row.sc-spacing-default.guide > *,
 .sc-row.sc-spacing-default.guide.wrap > *,
+.sc-row.sc-spacing-medium.guide > *,
+.sc-row.sc-spacing-medium.guide.wrap > *,
 .sc-row.sc-spacing-large.guide > *,
 .sc-row.sc-spacing-large.guide.wrap > *,
 .sc-col.sc-spacing-small.guide > *,
@@ -49,6 +61,9 @@
 .sc-col.sc-spacing-default.guide > *,
 .sc-col.sc-spacing-default.guide.family > *,
 .sc-col.sc-spacing-default.guide.only-children > *,
+.sc-col.sc-spacing-medium.guide > *,
+.sc-col.sc-spacing-medium.guide.family > *,
+.sc-col.sc-spacing-medium.guide.only-children > *,
 .sc-col.sc-spacing-large.guide > *,
 .sc-col.sc-spacing-large.guide.family > *,
 .sc-col.sc-spacing-large.guide.only-children > * {
@@ -183,6 +198,61 @@
   border-left-width: 0;
 }
 .sc-row.sc-spacing-default.guide.only-children {
+  border: 0;
+}
+.sc-row.sc-spacing-medium:not(.guide),
+.sc-row.sc-spacing-medium:not(.guide).family {
+  padding: 20px 0 20px 20px;
+}
+.sc-row.sc-spacing-medium:not(.guide) > *,
+.sc-row.sc-spacing-medium:not(.guide).family > * {
+  margin-right: 20px;
+}
+.sc-row.sc-spacing-medium:not(.guide).wrap,
+.sc-row.sc-spacing-medium:not(.guide).family.wrap {
+  padding: 20px 0 0 20px;
+}
+.sc-row.sc-spacing-medium:not(.guide).wrap > *,
+.sc-row.sc-spacing-medium:not(.guide).family.wrap > * {
+  margin-bottom: 20px;
+}
+.sc-row.sc-spacing-medium:not(.guide).only-children {
+  padding: 0;
+}
+.sc-row.sc-spacing-medium:not(.guide).only-children > * {
+  margin-right: 20px;
+}
+.sc-row.sc-spacing-medium:not(.guide).only-children > *:last-child {
+  margin-right: 0;
+}
+.sc-row.sc-spacing-medium:not(.guide).only-children.wrap > * {
+  margin-bottom: 20px;
+}
+.sc-row.sc-spacing-medium.guide {
+  border-top-width: 20px;
+  border-right-width: 0;
+  border-bottom-width: 20px;
+  border-left-width: 20px;
+}
+.sc-row.sc-spacing-medium.guide > * {
+  border-top-width: 0;
+  border-right-width: 20px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.sc-row.sc-spacing-medium.guide.wrap {
+  border-top-width: 20px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 20px;
+}
+.sc-row.sc-spacing-medium.guide.wrap > * {
+  border-top-width: 0;
+  border-right-width: 20px;
+  border-bottom-width: 20px;
+  border-left-width: 0;
+}
+.sc-row.sc-spacing-medium.guide.only-children {
   border: 0;
 }
 .sc-row.sc-spacing-large:not(.guide),
@@ -324,6 +394,46 @@
   border-top-width: 0;
   border-right-width: 0;
   border-bottom-width: 15px;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-medium:not(.guide),
+.sc-col.sc-spacing-medium:not(.guide).family {
+  padding: 20px 20px 0 20px;
+}
+.sc-col.sc-spacing-medium:not(.guide) > *,
+.sc-col.sc-spacing-medium:not(.guide).family > * {
+  margin-bottom: 20px;
+}
+.sc-col.sc-spacing-medium:not(.guide).only-children {
+  padding: 0;
+}
+.sc-col.sc-spacing-medium:not(.guide).only-children > * {
+  margin-bottom: 20px;
+}
+.sc-col.sc-spacing-medium.guide,
+.sc-col.sc-spacing-medium.guide.family {
+  border-top-width: 20px;
+  border-right-width: 20px;
+  border-bottom-width: 0;
+  border-left-width: 20px;
+}
+.sc-col.sc-spacing-medium.guide > *,
+.sc-col.sc-spacing-medium.guide.family > * {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 20px;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-medium.guide.only-children {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.sc-col.sc-spacing-medium.guide.only-children > * {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 20px;
   border-left-width: 0;
 }
 .sc-col.sc-spacing-large:not(.guide),
