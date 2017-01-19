@@ -1,5 +1,6 @@
 @import './utils/_guide.styl';
 @import './helpers/_ghosts.styl';
+@import './helpers/_events.styl';
 
 @import './mixins/_scaffold-in-row.styl';
 @import './mixins/_scaffold-in-col.styl';
@@ -53,6 +54,13 @@
 
   &.sc-spacing-large {
     $scaffold-in-col(30px);
+  }
+}
+
+.scaffold {
+  &.center {
+    align-items: center;
+    justify-content: center;
   }
 }
 

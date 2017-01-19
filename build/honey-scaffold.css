@@ -79,6 +79,9 @@
 .ghost-tall {
   height: 100%;
 }
+.remove-events {
+  pointer-events: none;
+}
 .scaffold,
 .sc-row,
 .sc-col {
@@ -475,6 +478,12 @@
   border-right-width: 0;
   border-bottom-width: 30px;
   border-left-width: 0;
+}
+.scaffold.center,
+.sc-row.center,
+.sc-col.center {
+  align-items: center;
+  justify-content: center;
 }
 .sc-row > *,
 .sc-col > * {
