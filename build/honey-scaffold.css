@@ -509,6 +509,10 @@
 .sc-col.no-shrink {
   flex-shrink: 0;
 }
+.sc-row.baseline,
+.sc-col.baseline {
+  align-items: baseline;
+}
 ::-webkit-scrollbar {
   display: none;
 }
