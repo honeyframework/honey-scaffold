@@ -1,6 +1,6 @@
 {
   "name": "honey-scaffold",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Bare-bones implementation of Honey's scaffolding structure",
   "main": "index.js",
   "scripts": {
