@@ -18,6 +18,14 @@ $scaffold-in-col(size) {
         margin-bottom: size;
       }
     }
+
+    &.only-parent {
+
+      padding: size size 0 size;
+      > * {
+        margin-bottom: 0
+      }
+    }
   }
 
   &.guide {

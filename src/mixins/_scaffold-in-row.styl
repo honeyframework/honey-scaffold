@@ -43,6 +43,20 @@ $scaffold-in-row(size) {
         }
       }
     }
+
+    &.only-parent {
+
+      padding: size 0 size size;
+      > * {
+        margin-right: 0;
+      }
+
+      &.wrap {
+        > * {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   &.guide {
