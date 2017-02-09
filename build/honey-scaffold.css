@@ -557,16 +557,6 @@
   align-items: center;
   justify-content: center;
 }
-.scaffold.center-vertical,
-.sc-row.center-vertical,
-.sc-col.center-vertical {
-  align-items: center;
-}
-.scaffold.center-horizontal,
-.sc-row.center-horizontal,
-.sc-col.center-horizontal {
-  justify-content: center;
-}
 .sc-row > *,
 .sc-col > * {
   flex-grow: 0;
