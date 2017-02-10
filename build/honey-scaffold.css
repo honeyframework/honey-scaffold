@@ -585,6 +585,10 @@
 .sc-col.baseline {
   align-items: baseline;
 }
+.sc-row.space-between,
+.sc-col.space-between {
+  justify-content: space-between;
+}
 ::-webkit-scrollbar {
   display: none;
 }
