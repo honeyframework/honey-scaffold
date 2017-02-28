@@ -589,6 +589,10 @@
 .sc-col.space-between {
   justify-content: space-between;
 }
+.scrollable {
+  overflow: scroll;
+  overflow-x: hidden;
+}
 ::-webkit-scrollbar {
   display: none;
 }
