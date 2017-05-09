@@ -565,18 +565,26 @@
 .sc-col.wrap {
   flex-wrap: wrap;
 }
+.sc-row .grow,
+.sc-col .grow,
 .sc-row.grow,
 .sc-col.grow {
   flex-grow: 1;
 }
+.sc-row .no-grow,
+.sc-col .no-grow,
 .sc-row.no-grow,
 .sc-col.no-grow {
   flex-grow: 0;
 }
+.sc-row .shrink,
+.sc-col .shrink,
 .sc-row.shrink,
 .sc-col.shrink {
   flex-shrink: 1;
 }
+.sc-row .no-shrink,
+.sc-col .no-shrink,
 .sc-row.no-shrink,
 .sc-col.no-shrink {
   flex-shrink: 0;
